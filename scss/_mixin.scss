@@ -1,0 +1,233 @@
+@mixin grid {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+  text-align: center;
+}
+.cell-one,
+.cell-three {
+  @include grid;
+}
+/*Mixin function to change background image*/
+@mixin background-image-mixin($imagepath, $columnIndex) {
+  background-image: url($imagepath);
+  background-repeat: no-repeat;
+  grid-column: $columnIndex/span 1;
+  margin-left: -15px;
+  grid-row: 1;
+  text-align: center;
+}
+/* Including the mixin function as part of class css */
+.ourProjects-image-1 {
+  @include background-image-mixin("./images/ourProjects-1.PNG", 1);
+  background-size: 350px;
+}
+.ourProjects-image-2 {
+  @include background-image-mixin("./images/blog-2.PNG", 2);
+}
+.img__description {
+  display: none;
+  height: 280px;
+  width: 100%;
+}
+.image-title {
+  color: white;
+  top: 140px;
+  position: relative;
+  font-weight: bold;
+}
+.ourProjects-image-2:hover .img__description {
+  display: block;
+  background: $blue-color;
+  opacity: 0.7;
+}
+.ourProjects-image-3 {
+  @include background-image-mixin("./images/ourProjects-2.PNG", 3);
+  background-size: 350px;
+}
+.ourProjects-image-4 {
+  @include background-image-mixin("./images/ourProjects-3.PNG", 4);
+  background-size: 325px;
+}
+/* sass loop for card layout - Why Choose us */
+@for $i from 1 through 3 {
+  $columnindex: $i + 1;
+  .card-#{$i} {
+    grid-column: $columnindex / span 1;
+    grid-row: 1;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url("./images/QuestionIcon.png");
+  }
+}
+/* sass loop for card layout - Why Choose us */
+@for $i from 1 through 5 {
+  $columnindex: $i + 1;
+  .aboutinfo-#{$i} {
+    grid-column: $columnindex / span 1;
+    grid-row: 1;
+    text-align: center;
+  }
+}
+.aboutinfo-4 {
+  background-position-y: 120px;
+  background-position-x: 55px;
+  background-image: url("./images/smallerQuestion.PNG");
+  background-repeat: no-repeat;
+}
+/*Mixin function to change padding-Top*/
+@mixin my-padding-mixin($some-number) {
+  text-align: center;
+  color: $blue-color;
+  padding-top: $some-number;
+}
+/*Mixin function to change button-width*/
+@mixin button-width-mixin($some-number) {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  background: #5dbcd2;
+  width: $some-number;
+  height: 40px;
+}
+.squareBordersBtn {
+  @include button-width-mixin(100%);
+}
+.squareTestimonialBordersBtn {
+  font-style: italic;
+  @include button-width-mixin(30%);
+}
+.blogTitle {
+  @include my-padding-mixin(20px);
+}
+.chooseUsTitle,
+.title-card {
+  @include my-padding-mixin(20px);
+}
+.testimonialsTitle {
+  @include my-padding-mixin(80px);
+}
+.ourProjectsTitle {
+  height: 60px;
+  @include my-padding-mixin(50px);
+}
+.instantTitle {
+  @include my-padding-mixin(0px);
+}
+/* sass loop for card layout - Services, Team */
+@for $i from 1 through 5 {
+  $columnindex: $i + 1;
+  .services-card-#{$i} {
+    grid-column: $columnindex / span 1;
+    grid-row: 1;
+    text-align: center;
+    padding-right: 30px;
+  }
+  .teamGrid-cell-#{$i} {
+    grid-column: $columnindex / span 1;
+    grid-row: 1;
+    text-align: center;
+    padding-right: 30px;
+  }
+}
+/* sass loop for card layout - Latest blog */
+@for $i from 1 through 4 {
+  $columnindex: $i + 1;
+  .blog-card-#{$i} {
+    grid-column: $columnindex / span 1;
+    grid-row: 1;
+    text-align: center;
+    padding-right: 30px;
+  }
+}
+@for $i from 1 through 6 {
+  $columnindex: $i + 1;
+  .pricing-cell-#{$i} {
+    height: 80%;
+    width: 90%;
+    background-color: white;
+    grid-column: $columnindex/span 1;
+    grid-row: 1;
+    text-align: center;
+  }
+}
+
+.teamGrid-cell-1 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./images/teamPerson-1.PNG");
+}
+.teamGrid-cell-2 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./images/teamPerson-2.PNG");
+}
+.teamGrid-cell-3 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./images/teamPerson-3.PNG");
+}
+
+/* sass loop for card layout - About Company */
+@for $i from 1 through 2 {
+  .company-card-#{$i} {
+    grid-column: $i / span 1;
+    grid-row: 1;
+    text-align: center;
+    padding-right: 30px;
+  }
+}
+.company-card-2 {
+  width: 400px;
+  margin-top: 50px;
+}
+.services-card-1 {
+  margin-left: 70px;
+}
+.cardImage-1 {
+  width: 200px;
+  background-image: url("./images/residentialCleaning.jpg");
+  height: 150px;
+  background-repeat: no-repeat;
+}
+.cardImage-2 {
+  width: 200px;
+  background-image: url("./images/commercialCleaning.png");
+  height: 150px;
+  background-repeat: no-repeat;
+}
+.cardImage-3 {
+  width: 200px;
+  background-image: url("./images/officeCleaning.png");
+  height: 150px;
+  background-repeat: no-repeat;
+}
+.cardImage-4 {
+  width: 200px;
+  background-image: url("./images/seasonalCleaning.png");
+  height: 150px;
+  background-repeat: no-repeat;
+}
+.blog-cardimage-1 {
+  padding-left: 30px;
+  width: 250px;
+  background-size: 300px 200px;
+  background-image: url("./images/blog-1.PNG");
+  height: 200px;
+  background-repeat: no-repeat;
+}
+.blog-cardimage-2 {
+  padding-left: 30px;
+  width: 250px;
+  background-size: 300px 200px;
+  background-image: url("./images/blog-2.PNG");
+  height: 200px;
+  background-repeat: no-repeat;
+}
+.blog-cardimage-3 {
+  padding-left: 30px;
+  width: 250px;
+  background-size: 300px 200px;
+  background-image: url("./images/blog-3.PNG");
+  height: 200px;
+  background-repeat: no-repeat;
+}

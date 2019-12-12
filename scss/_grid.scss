@@ -1,0 +1,107 @@
+/* This CSS will print because %message-shared is extended.Extend/Inheritance applied */
+%grid-shared {
+  grid-gap: 5px;
+  align-content: center;
+  display: grid;
+}
+%cell-shared {
+  grid-column: 2 / span 1;
+  grid-row: 1;
+  text-align: center;
+}
+
+.discount {
+  background-color: $blue-color;
+}
+.chooseUscontentgrid {
+  @extend %grid-shared;
+  grid-auto-rows: 380px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.teamGrid {
+  @extend %grid-shared;
+  grid-auto-rows: 350px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.pricingTablesGrid {
+  @extend %grid-shared;
+  grid-auto-rows: 440px;
+  grid-template-columns: repeat(6, 1fr);
+}
+.aboutCompanyGrid {
+  @extend %grid-shared;
+  grid-auto-rows: 500px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.servicescontentgrid {
+  @extend %grid-shared;
+  grid-auto-rows: 350px;
+  grid-template-columns: repeat(6, 1fr);
+}
+.blogcontentgrid {
+  @extend %grid-shared;
+  grid-auto-rows: 350px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.contactUsInfo {
+  margin-top: -400px;
+  @extend %grid-shared;
+  grid-auto-rows: 200px;
+  grid-template-columns: repeat(6, 1fr);
+}
+.ourProjectsGrid {
+  @extend %grid-shared;
+  grid-auto-rows: 270px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.firstgrid {
+  @extend %grid-shared;
+  grid-auto-rows: 50px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.thirdgrid {
+  padding-top: 8px;
+  grid-auto-rows: 500px;
+  grid-gap: 5px;
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.imagepanel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./images/clean.jpg");
+  grid-column: 1 / span 1;
+  grid-row: 1;
+  text-align: center;
+}
+
+.pricing-cell-3 {
+  border: 3px solid $blue-color;
+}
+.secondgrid {
+  @extend %grid-shared;
+  grid-auto-rows: 50px;
+  background-color: white;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header {
+  border-bottom: 1px solid lightgray;
+}
+
+.cell-three {
+  padding-left: 82px;
+}
+.cell-two {
+  @extend %cell-shared;
+}
+
+.cell-four {
+  padding-left: 100px;
+  display: inline-flex;
+  grid-column: 2 / span 2;
+  grid-row: 1;
+}

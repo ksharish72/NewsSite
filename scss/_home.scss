@@ -1,0 +1,374 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.servicesContent {
+  font-size: 11px;
+  line-height: 24px;
+  text-align: justify;
+}
+.creator {
+  font-size: 12px;
+  font-style: italic;
+  color: darkslategray;
+  font-weight: bold;
+  padding: 5px;
+}
+.imagepanel {
+  color: white;
+}
+.imagepanel-1 {
+  font-size: 40px;
+  text-align: left;
+}
+.imagepanel-2 {
+  font-size: smaller;
+  padding-top: 20px;
+  text-align: left;
+}
+.imagepanel-title {
+  width: 35%;
+  padding-top: 150px;
+  padding-left: 200px;
+}
+.creatorpara {
+  display: inline-flex;
+  margin-left: -150px;
+}
+
+.circle {
+  background: darkgray;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.dateYear {
+  text-align: left;
+  font-size: 11px;
+  color: darkslategray;
+  font-style: italic;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: -10px;
+}
+.bytext {
+  font-size: 12px;
+  padding: 5px;
+}
+.blogContent {
+  color: gray;
+  margin-top: -15px;
+  font-size: 11px;
+  line-height: 20px;
+  text-align: justify;
+}
+.testimonialsBtn {
+  text-align: center;
+}
+.testimonialsContent {
+  font-style: italic;
+  color: gray;
+  margin-top: -15px;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+.textBlog {
+  padding-left: 10px;
+}
+.about-2 {
+  margin-top: -18px;
+  font-size: $content-font-size;
+  color: darkgray;
+  line-height: 20px;
+}
+
+.about-content-2 {
+  font-size: $content-font-size;
+  color: darkgray;
+  line-height: 20px;
+}
+.moreServicesBtn {
+  text-align: center;
+}
+.moreInfoBtn {
+  margin-left: -14px;
+  text-align: left;
+}
+.companyTitle {
+  text-align: left;
+  color: $blue-color;
+  margin-bottom: 10px;
+}
+.about-content-1 {
+  margin-left: 80px;
+}
+.smallQuestionIcon {
+  background-size: 50px;
+  background-image: url("./images/smallQuestion.PNG");
+  background-repeat: no-repeat;
+}
+
+.companyTitle-1 {
+  text-align: left;
+  color: $blue-color;
+}
+.about-1 {
+  position: relative;
+  color: darkgray;
+  font-style: italic;
+  font-size: 14px;
+  top: 12px;
+}
+.testimonialsImage {
+  margin-left: 180px;
+  height: 340px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-image: url("./images/testimonials.PNG");
+}
+.roundedBordersBtn {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  margin-top: 8px;
+  margin-left: 20px;
+  border-radius: 25px;
+  background: #5dbcd2;
+  width: 140px;
+  height: 40px;
+}
+.about {
+  text-align: left;
+}
+.topnav {
+  padding-top: 20px;
+}
+.pricingTablesTitle {
+  text-align: center;
+  color: $blue-color;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.testimonials {
+  width: 60%;
+  margin: 0 auto;
+}
+/*title css shared - inheritance*/
+.blog-card-title {
+  text-align: justify !important;
+  color: $blue-color;
+}
+.justifyContent {
+  text-align: justify !important;
+}
+.pickUsContent {
+  line-height: 24px;
+  font-size: $content-font-size;
+  top: 140px;
+  position: relative;
+  color: darkgray;
+}
+.discount-content {
+  color: white;
+  padding-left: 150px;
+  font-size: 24px;
+}
+.pickUsTitle {
+  padding-right: 18px;
+  top: 150px;
+  position: relative;
+}
+.featuresList {
+  list-style-type: none;
+}
+.pricing {
+  background-color: whitesmoke;
+}
+.iconQuestion {
+  background-image: url("./images/iconQuestion.PNG");
+  height: 25px;
+  background-repeat: no-repeat;
+  margin-left: 52px;
+}
+.personRole {
+  margin-top: -15px;
+  color: gray;
+  font-size: 12px;
+}
+.personTitle {
+  padding-top: 10px;
+  padding-left: 20px;
+  top: 180px;
+  position: relative;
+}
+.sticky {
+  top: 0;
+  overflow: hidden;
+  position: sticky;
+  width: 100%;
+}
+.Services {
+  background-color: whitesmoke;
+  height: 500px;
+}
+.title {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.discount {
+  padding: 70px;
+  margin: auto;
+}
+.roundedBordersDiscountBtn {
+  cursor: pointer;
+  color: #5dbcd2;
+  border: 1px solid white;
+  margin-top: 8px;
+  margin-left: 100px;
+  border-radius: 25px;
+  background: white;
+  width: 140px;
+  height: 40px;
+}
+.roundedBordersImageBtn {
+  cursor: pointer;
+  color: #5dbcd2;
+  border: 1px solid white;
+  margin-top: 20px;
+  border-radius: 25px;
+  background: white;
+  width: 140px;
+  height: 40px;
+  margin-right: 285px;
+}
+.company-card-1 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./images/About.PNG");
+  margin-left: 200px;
+}
+.quickview {
+  color: gray;
+}
+.contactUsContent {
+  text-align: left;
+  margin-left: 60px;
+}
+.quickViewContent,
+.contactUsContent {
+  color: gray;
+  margin-top: -15px;
+  font-size: 11px;
+  line-height: 25px;
+}
+.month {
+  color: gray;
+  font-size: 13px;
+}
+.quicklink {
+  color: gray;
+  text-decoration: none;
+}
+.imageCleanQuestionIcon {
+  background-position: center;
+  height: 50px;
+  padding-top: 15px;
+  background-image: url("./images/typesQuestionIcon.PNG");
+  background-repeat: no-repeat;
+}
+
+.carpetType {
+  width: 70% !important;
+}
+.costpermonth {
+  padding-top: 15px;
+}
+.apartmentType {
+  width: 90% !important;
+}
+.cleaningFeatures {
+  font-size: 12px;
+  color: gray;
+  line-height: 30px;
+}
+.instantQuoteForm {
+  height: 300px;
+  display: inline-grid;
+  padding: 20px;
+}
+.formDivision {
+  margin-left: 800px;
+  width: 384px;
+  border: 1px solid darkgray;
+  position: relative;
+  top: -500px;
+  height: 400px;
+  background-color: white;
+}
+textarea[name="comment"] {
+  background-color: lightgray;
+}
+input[type="text"],
+select {
+  font-style: italic;
+  background-color: lightgray;
+  margin: 30px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.instantquote {
+  opacity: 0.3;
+  height: 550px;
+  width: 100%;
+  background-image: url("./images/instantquote.jpg");
+}
+.priceDollars {
+  color: dimgray;
+  font-size: 25px;
+}
+.cleaningType {
+  margin: 0 auto;
+  width: 65%;
+  border-bottom: 1px solid lightgray;
+  font-size: 16px;
+  color: $blue-color;
+}
+.titleHeading {
+  color: $blue-color;
+  font-weight: 900;
+}
+.infoTitle {
+  text-align: left;
+  color: $blue-color;
+  font-weight: 900;
+}
+.heading {
+  color: darkgray;
+}
+.companyEmail {
+  color: $blue-color;
+}
+/*descendant selector*/
+
+/*Nesting tags*/
+.topnav {
+  a {
+    font-weight: $font-weight-bold;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    padding-left: 10px;
+  }
+}
+
+.topnav {
+  .active {
+    color: $blue-color;
+  }
+}
